@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #999;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #999;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to GitPub</h1>
+    <ul>
+        <% for (let i=0; i < drinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%= i %>">
+                    <%= drinks[i].name %>
+                </a>
+            </li>
+            <% } %>
+    </ul>
+</body>
+
+</html>
